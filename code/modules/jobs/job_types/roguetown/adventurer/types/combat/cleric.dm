@@ -206,7 +206,7 @@
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/combat_bard.ogg'
 			H.change_stat("strength", 1)
-			H.change_stat("constitution, 1)
+			H.change_stat("constitution", 1)
 			H.change_stat("speed", 2)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			switch(H.patron?.type)
@@ -275,7 +275,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 			H.cmode_music = 'sound/music/combat_holy.ogg'
 			H.change_stat("intelligence", 2)
-			H.change_stat("constitution, 1)
+			H.change_stat("constitution", 1)
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
 			switch(H.patron?.type)

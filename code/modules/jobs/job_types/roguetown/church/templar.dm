@@ -247,7 +247,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)	//May tone down to 2; seems OK.
 		H.cmode_music = 'sound/music/combat_holy.ogg'
 		H.change_stat("strength", 2)
-		H.change_stat("constitution, 3)
+		H.change_stat("constitution", 3)
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)

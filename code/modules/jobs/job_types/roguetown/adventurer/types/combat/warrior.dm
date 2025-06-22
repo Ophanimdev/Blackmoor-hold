@@ -111,7 +111,7 @@
 					H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 					beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
 			H.change_stat("strength", 1)
-			H.change_stat("constitution, 1)
+			H.change_stat("constitution", 1)
 			H.change_stat("speed", 2)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			head = /obj/item/clothing/head/roguetown/duelhat

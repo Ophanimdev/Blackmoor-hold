@@ -59,7 +59,7 @@
 		if ("My Bow Is Enough")
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 			head = /obj/item/clothing/head/roguetown/duelhat
-	H.change_stat("constitution, 2)
+	H.change_stat("constitution", 2)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 2)
 	wretch_select_bounty(H)

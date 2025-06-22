@@ -155,7 +155,7 @@
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	//Garrison ranged/speed class. Time to go wild
-	H.change_stat("constitution, 1) // seems kinda lame but remember guardsman bonus!!
+	H.change_stat("constitution", 1) // seems kinda lame but remember guardsman bonus!!
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 2)
 
@@ -300,7 +300,7 @@
 
 	H.change_stat("strength", 1) //hopefully will help them with restraining people.
 	H.change_stat("intelligence", 1)
-	H.change_stat("constitution, 1)
+	H.change_stat("constitution", 1)
 	H.change_stat("speed", 2)
 	H.grant_language(/datum/language/thievescant)
 

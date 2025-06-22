@@ -77,7 +77,7 @@
 /datum/status_effect/debuff/thirstyt3
 	id = "thirsty3"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/thirstyt3
-	effectedstats = list("strength" = -1, "speed" = -2, "constitution = -3)
+	effectedstats = list("strength" = -1, "speed" = -2, "constitution = -3")
 	duration = 100
 
 /atom/movable/screen/alert/status_effect/debuff/thirstyt3
@@ -182,7 +182,7 @@
 /datum/status_effect/debuff/netted
 	id = "net"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/netted
-	effectedstats = list("speed" = -5, "constitution = -2)
+	effectedstats = list("speed" = -5, "constitution = -2")
 	duration = 3 MINUTES
 
 /datum/status_effect/debuff/netted/on_apply()
@@ -206,7 +206,7 @@
 /datum/status_effect/debuff/muscle_sore
 	id = "muscle_sore"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/muscle_sore
-	effectedstats = list("strength" = -1, "constitution = -1)
+	effectedstats = list("strength" = -1, "constitution = -1")
 
 /atom/movable/screen/alert/status_effect/debuff/muscle_sore
 	name = "Muscle Soreness"
@@ -271,7 +271,7 @@
 /datum/status_effect/debuff/chilled
 	id = "chilled"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/chilled
-	effectedstats = list("speed" = -5, "strength" = -2, "constitution = -2)
+	effectedstats = list("speed" = -5, "strength" = -2, "constitution = -2")
 	duration = 15 SECONDS
 
 /atom/movable/screen/alert/status_effect/debuff/chilled

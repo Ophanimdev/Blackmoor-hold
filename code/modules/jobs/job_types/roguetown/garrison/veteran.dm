@@ -88,7 +88,7 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
-			H.change_stat("constitution, 1)
+			H.change_stat("constitution", 1)
 
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
@@ -275,7 +275,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 		H.change_stat("intelligence", 1)
-		H.change_stat("constitution, 3) // two handed weapons require a LOT of stamina.
+		H.change_stat("constitution", 3) // two handed weapons require a LOT of stamina.
 		H.change_stat("speed", -1)
 		H.change_stat("strength", 2)
 		if(H.age == AGE_OLD)
