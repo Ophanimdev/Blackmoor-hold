@@ -78,7 +78,7 @@
 //Call to Arms - AoE buff for all people surrounding you.
 /obj/effect/proc_holder/spell/self/call_to_arms
 	name = "Call to Arms"
-	desc = "Grants you and all allies nearby a buff to their strength, endurance, and constitution."
+	desc = "Grants you and all allies nearby a buff to their strength and constitution."
 	overlay_state = "call_to_arms"
 	recharge_time = 5 MINUTES
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)

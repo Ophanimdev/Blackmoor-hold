@@ -8,7 +8,7 @@
 #define STATKEY_LCK "fortune"
 
 //This was previously in vampirelord.dm and mob/living/stats.dm, the person defined it twice because vampirelord came in below that stats file, so now both of them can get it here.
-#define MOBSTATS list("strength", "perception", "intelligence", "constitution", "endurance", "speed", "fortune")
+#define MOBSTATS list("strength", "perception", "intelligence", "constitution", "speed", "fortune")
 
 //Misc mob defines
 

@@ -102,7 +102,7 @@
 	name = "coal dust"
 	icon_state = "coaldust"
 	major_pot = /datum/alch_cauldron_recipe/antidote
-	med_pot = /datum/alch_cauldron_recipe/end_potion
+	med_pot = /datum/alch_cauldron_recipe/con_potion
 	minor_pot = /datum/alch_cauldron_recipe/str_potion
 
 /obj/item/alch/silverdust
