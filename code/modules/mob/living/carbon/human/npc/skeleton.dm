@@ -89,7 +89,7 @@
 	H.STASTR = rand(14,16)
 	H.STASPD = 8
 	H.STACON = 4
-	H.STAEND = 15
+	H. = 15
 	H.STAINT = 1
 
 	var/skeletonclass = rand(1,11)
@@ -172,7 +172,7 @@
 	H.STASTR = rand(14,16)
 	H.STASPD = 8
 	H.STACON = 9
-	H.STAEND = 15
+	H. = 15
 	H.STAINT = 1
 
 	//light labor skills for skeleton manual labor and some warrior-adventurer skills, equipment is still bad probably
@@ -252,7 +252,7 @@
 	H.STASTR = rand(15,16)
 	H.STASPD = 8
 	H.STACON = 4
-	H.STAEND = 15
+	H. = 15
 	H.STAINT = 1
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	if(H.mind)
@@ -280,7 +280,6 @@
 	H.STASTR = 18
 	H.STASPD = 10
 	H.STACON = 10
-	H.STAEND = 16
 	H.STAINT = 1
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)

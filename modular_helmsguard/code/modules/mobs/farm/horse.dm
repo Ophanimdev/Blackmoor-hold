@@ -33,9 +33,8 @@
 	minimum_distance = 10
 	milkies = FALSE
 	STASPD = 15
-	STACON = 8
+	STACON = 15
 	STASTR = 12
-	STAEND = 15
 	pixel_x = -8
 	attack_sound = list('sound/vo/mobs/saiga/attack (1).ogg','sound/vo/mobs/saiga/attack (2).ogg')
 	can_buckle = TRUE

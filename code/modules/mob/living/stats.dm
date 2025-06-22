@@ -3,7 +3,6 @@
 #define STAT_PERCEPTION "perception"
 #define STAT_INTELLIGENCE "intelligence"
 #define STAT_CONSTITUTION "constitution"
-#define STAT_ENDURANCE "endurance"
 #define STAT_SPEED "speed"
 #define STAT_FORTUNE "fortune"
 
@@ -12,7 +11,6 @@
 	var/STAPER = 10
 	var/STAINT = 10
 	var/STACON = 10
-	var/STAEND = 10
 	var/STASPD = 10
 	var/STALUC = 10
 	//buffers, the 'true' amount of each stat
@@ -53,7 +51,6 @@
 	STAPER = 10
 	STAINT = 10
 	STACON = 10
-	STAEND = 10
 	STASPD = 10
 	STALUC = 10
 	if(ishuman(src))
@@ -70,7 +67,7 @@
 		switch(H.age)
 			if(AGE_MIDDLEAGED)
 				change_stat("speed", -1)
-				change_stat("endurance", 1)
+				change_stat("constitution, 1)
 			if(AGE_OLD)
 				change_stat("strength", -1)
 				change_stat("speed", -2)
@@ -81,7 +78,6 @@
 			if(check_blacklist(ckey(key)))
 				change_stat("strength", -5)
 				change_stat("speed", -20)
-				change_stat("endurance", -2)
 				change_stat("constitution", -2)
 				change_stat("intelligence", -20)
 				change_stat("fortune", -20)
@@ -191,26 +187,6 @@
 				BUFCON++
 			STACON = newamt
 
-		if("endurance")
-			newamt = STAEND + amt
-			if(BUFEND < 0)
-				BUFEND = BUFEND + amt
-				if(BUFEND > 0)
-					newamt = STAEND + BUFEND
-					BUFEND = 0
-			if(BUFEND > 0)
-				BUFEND = BUFEND + amt
-				if(BUFEND < 0)
-					newamt = STAEND + BUFEND
-					BUFEND = 0
-			while(newamt < 1)
-				newamt++
-				BUFEND--
-			while(newamt > 20)
-				newamt--
-				BUFEND++
-			STAEND = newamt
-
 		if("speed")
 			newamt = STASPD + amt
 			if(BUFSPE < 0)
@@ -272,8 +248,6 @@
 			return STASTR
 		if(STATKEY_PER)
 			return STAPER
-		if(STATKEY_END)
-			return STAEND
 		if(STATKEY_CON)
 			return STACON
 		if(STATKEY_INT)

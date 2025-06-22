@@ -38,7 +38,6 @@
 	var/STASTR = 10
 	var/STASPD = 10
 	var/STAINT = 10
-	var/STAEND = 10
 	var/STAPER = 10
 
 /datum/antagonist/lich/on_gain()
@@ -62,14 +61,12 @@
 	STAPER = owner.current.STAPER
 	STAINT = owner.current.STAINT
 	STASPD = owner.current.STASPD
-	STAEND = owner.current.STAEND
 
 /datum/antagonist/lich/proc/set_stats()
 	owner.current.STASTR = src.STASTR
 	owner.current.STAPER = src.STAPER
 	owner.current.STAINT = src.STAINT
 	owner.current.STASPD = src.STASPD
-	owner.current.STAEND = src.STAEND
 
 /datum/antagonist/lich/proc/skele_look()
 	var/mob/living/carbon/human/L = owner.current

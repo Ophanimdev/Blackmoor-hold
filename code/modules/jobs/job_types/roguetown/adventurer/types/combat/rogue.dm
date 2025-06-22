@@ -66,7 +66,7 @@
 			H.change_stat("strength", -1)
 			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 1)
-			H.change_stat("endurance", 1)
+			H.change_stat("constitution, 1)
 			H.change_stat("speed", 3)
 
 		if("Thief")
@@ -109,7 +109,7 @@
 			H.change_stat("strength", -1)
 			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 1)
-			H.change_stat("endurance", 1)
+			H.change_stat("constitution, 1)
 			H.change_stat("speed", 3)
 			H.grant_language(/datum/language/thievescant)
 
@@ -167,7 +167,7 @@
 				if("Vocal Talisman")
 					backr = /obj/item/rogue/instrument/vocals
 			H.change_stat("intelligence", 2)
-			H.change_stat("endurance", 1)
+			H.change_stat("constitution, 1)
 			H.change_stat("speed", 2)
 
 		if("Swashbuckler")
@@ -204,5 +204,5 @@
 			ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
 			ADD_TRAIT (H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)
 			H.change_stat("strength", 1)
-			H.change_stat("endurance", 1)
+			H.change_stat("constitution, 1)
 			H.change_stat("speed", 2)

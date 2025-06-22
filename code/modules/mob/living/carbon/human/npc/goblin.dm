@@ -292,7 +292,6 @@
 	else
 		H.STASPD = 14
 	H.STACON = 6
-	H.STAEND = 15
 	if(is_species(H, /datum/species/goblin/moon))
 		H.STAINT = 8
 	else

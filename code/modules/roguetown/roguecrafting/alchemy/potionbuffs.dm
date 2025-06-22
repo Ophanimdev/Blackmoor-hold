@@ -45,7 +45,7 @@
 /datum/status_effect/buff/alch/endurancepot
 	id = "endpot"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/alch/endurancepot
-	effectedstats = list("endurance" = 3)
+	effectedstats = list("constitution" = 3)
 	duration = 3 SECONDS
 
 /atom/movable/screen/alert/status_effect/buff/alch/endurancepot

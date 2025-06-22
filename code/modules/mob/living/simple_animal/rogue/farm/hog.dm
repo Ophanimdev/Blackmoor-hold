@@ -33,8 +33,7 @@
 	attack_verb_continuous = "rams"
 	melee_damage_lower = 15
 	melee_damage_upper = 40 //Ever been rammed by a boar? Exactly.
-	STACON = 15
-	STAEND = 20//Beefy
+	STACON = 20
 	STASTR = 12
 	STASPD = 8
 	move_to_delay = 8
@@ -152,8 +151,7 @@
 	food_type = list(/obj/item/reagent_containers/food/snacks/grown/oat,/obj/item/reagent_containers/food/snacks/grown/potato/rogue,/obj/item/reagent_containers/food/snacks/rogue/meat)//Omnivores / Give me your öats bröther for I am starving.
 	footstep_type = FOOTSTEP_MOB_SHOE
 	pooptype = /obj/item/natural/poo/horse
-	STACON = 15
-	STAEND = 20//Beefy
+	STACON = 20
 	STASTR = 12
 	STASPD = 6
 	move_to_delay = 10//Slowest mount

@@ -354,7 +354,6 @@
 	var/stage = 1
 	var/str_buff = 3
 	var/con_buff = 3
-	var/end_buff = 3
 	var/speed_malus = 0
 	var/fortune_malus = 0
 	var/perception_malus = 0
@@ -367,7 +366,6 @@
 /datum/status_effect/buff/abyssal/on_creation(mob/living/new_owner, new_str, new_con, new_end, new_fort, new_speed, new_per)
 	str_buff = new_str
 	con_buff = new_con
-	end_buff = new_end
 	fortune_malus = new_fort
 	speed_malus = new_speed
 	perception_malus = new_per
@@ -375,7 +373,6 @@
 	effectedstats = list(
 		"strength" = str_buff,
 		"constitution" = con_buff,
-		"endurance" = end_buff,
 		"fortune" = fortune_malus,
 		"speed" = speed_malus,
 		"perception" = perception_malus

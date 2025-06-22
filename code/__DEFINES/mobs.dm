@@ -4,7 +4,6 @@
 #define STATKEY_PER "perception"
 #define STATKEY_INT "intelligence"
 #define STATKEY_CON "constitution"
-#define STATKEY_END "endurance"
 #define STATKEY_SPD "speed"
 #define STATKEY_LCK "fortune"
 
