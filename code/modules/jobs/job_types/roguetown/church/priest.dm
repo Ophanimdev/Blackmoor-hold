@@ -151,12 +151,18 @@
 		for(var/mob/living/carbon/human/H in GLOB.player_list)
 			if(H == src)
 				continue
-			if(H.real_name == inputty)
+			if(H.real_name == inputty && istype(H.patron, /datum/patron/divine))
 				found = TRUE
 				H.add_stress(/datum/stressevent/psycurse)
+				if(H.devotion)
+					H.gib()
 		if(!found)
 			return FALSE
 		GLOB.excommunicated_players += inputty
+		var/datum/stressevent/heretic_declared/stress = new(H.real_name)
+		for(var/mob/living/carbon/human/D in GLOB.player_list)
+			if(istype(D.patron, /datum/patron/divine))
+				D.add_stress(stress)
 		priority_announce("[real_name] has put Xylix's curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
 
 /mob/living/carbon/human/proc/churchannouncement()

@@ -66,6 +66,12 @@
 			GLOB.blackmoor_round_stats[STATS_NOBLE_DEATHS]++
 		if(ishumannorthern(src))
 			GLOB.blackmoor_round_stats[STATS_HUMEN_DEATHS]++
+		if(src.has_stress_event(/datum/stressevent/psycurse))
+			for(var/mob/living/carbon/human/faithful in GLOB.player_list)
+				if(istype(faithful.patron, /datum/patron/divine))
+					for(var/datum/stressevent/heretic_declared/heresy in faithful.get_negative_stressors())
+						if(heresy.heretic_name == src.real_name)
+							faithful.remove_stress(heresy)
 		if(mind)
 			if(mind.assigned_role in GLOB.church_positions)
 				GLOB.blackmoor_round_stats[STATS_CLERGY_DEATHS]++
