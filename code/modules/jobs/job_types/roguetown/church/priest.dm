@@ -159,7 +159,7 @@
 		if(!found)
 			return FALSE
 		GLOB.excommunicated_players += inputty
-		var/datum/stressevent/heretic_declared/stress = new(H.real_name)
+		var/datum/stressevent/heretic_declared/stress = new /datum/stressevent/heretic_declared(inputty)
 		for(var/mob/living/carbon/human/D in GLOB.player_list)
 			if(istype(D.patron, /datum/patron/divine))
 				D.add_stress(stress)
