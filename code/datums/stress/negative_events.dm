@@ -316,12 +316,3 @@
 	stressadd = 15
 	desc = span_boldred("By Psydon, the great comet's shard is no more! What will we do now!?")
 	timer = 15 MINUTES
-
-/datum/stressevent/heretic_declared
-	var/heretic_name
-	stressadd = 1
-
-/datum/stressevent/heretic_declared/New(var/new_name)
-    ..()
-    var/heretic_name = new_name
-    desc = span_red("The heretic [heretic_name] must die!")
