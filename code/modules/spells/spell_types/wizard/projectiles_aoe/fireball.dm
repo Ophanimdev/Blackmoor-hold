@@ -27,8 +27,8 @@
 /obj/projectile/magic/aoe/fireball/rogue
 	name = "fireball"
 	exp_heavy = 0
-	exp_light = 0
-	exp_flash = 0
+	exp_light = 1
+	exp_flash = 2
 	exp_fire = 0
 	damage = 20
 	damage_type = BURN
