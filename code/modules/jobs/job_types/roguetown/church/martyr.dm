@@ -429,7 +429,7 @@
 	disallowed_races = list(RACES_GOBLIN, RACES_VERMIN, RACES_CONSTRUCT)
 	allowed_patrons = ALL_DIVINE_PATRONS
 	outfit = /datum/outfit/job/roguetown/martyr
-	min_pq = 10 //Cus it's a Martyr of the Ten. Get it.
+	min_pq = 40
 	max_pq = null
 	round_contrib_points = 4
 	total_positions = 1
