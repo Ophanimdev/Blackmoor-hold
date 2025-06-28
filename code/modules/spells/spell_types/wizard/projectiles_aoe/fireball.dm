@@ -29,7 +29,7 @@
 	exp_heavy = 0
 	exp_light = 1
 	exp_flash = 2
-	exp_fire = 0
+	exp_fire = 1
 	damage = 20
 	damage_type = BURN
 	accuracy = 40 // Base accuracy is lower for burn projectiles because they bypass armor
