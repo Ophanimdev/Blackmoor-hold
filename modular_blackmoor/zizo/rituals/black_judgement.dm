@@ -23,6 +23,7 @@
 	return
 
 /obj/item/roguecoin/gold/judgement
+	desc = "The face on this coin leers at you with a fiendish grin."
 	var/mob/living/carbon/human/victim = null
 
 /obj/item/roguecoin/gold/judgement/attack_self(mob/living/user)
@@ -38,21 +39,41 @@
 	)
 	var/turf/location
 	var/obj/item/bodypart/head/VH
-
+	var/target_immune = FALSE
+	for(var/obj/item/I in victim.contents)
+		if(istype(I, /obj/item/clothing/neck/roguetown/psicross) || istype(I, /obj/item/clothing/head/roguetown/crown) || HAS_TRAIT(victim, TRAIT_CHOSEN))
+			target_immune = TRUE
 	if(heads_tails)
 		//Heads!
-		playsound(victim, pick(goresound), 50, FALSE, -1)
-		victim.visible_message(span_danger("<B>[victim]'s head bursts into gore!</B>"))
-		victim.spawn_gibs()
-		victim.spawn_gibs()
-		victim.spawn_gibs()
-		VH = victim.get_bodypart(BODY_ZONE_HEAD)
-		VH.drop_limb()
-		qdel(VH)
-		location = get_turf(victim)
-		if(istype(location))
-			victim.add_splatter_floor(location)
-		qdel(src)
+		if(!target_immune)
+			playsound(victim, pick(goresound), 50, FALSE, -1)
+			victim.visible_message(span_danger("<B>[victim]'s head bursts into gore!</B>"))
+			victim.spawn_gibs()
+			victim.spawn_gibs()
+			victim.spawn_gibs()
+			VH = victim.get_bodypart(BODY_ZONE_HEAD)
+			VH.drop_limb()
+			qdel(VH)
+			location = get_turf(victim)
+			if(istype(location))
+				victim.add_splatter_floor(location)
+			qdel(src)
+		else//They're safe!
+			to_chat(victim, span_purple("Your faith protects you from something TRULY TERRIBLE."))
+			to_chat(user, span_purple("Shit! The target has holy protection!"))
+			playsound(user, pick(goresound), 50, FALSE, -1)
+			user.visible_message(span_danger("<B>[user]'s head bursts into gore!</B>"))
+			user.spawn_gibs()
+			user.spawn_gibs()
+			user.spawn_gibs()
+			VH = user.get_bodypart(BODY_ZONE_HEAD)
+			VH.drop_limb()
+			qdel(VH)
+			location = get_turf(user)
+			if(istype(location))
+				user.add_splatter_floor(location)
+			qdel(src)
+
 	else //You lose!
 		playsound(user, pick(goresound), 50, FALSE, -1)
 		user.visible_message(span_danger("<B>[user]'s head bursts into gore!</B>"))
