@@ -23,7 +23,7 @@
 	return
 
 /obj/item/roguecoin/gold/judgement
-	desc = "The face on this coin leers at you with a fiendish grin."
+	desc = "The face on this coin leers at you with a fiendish grin. (right click with opposite hand)"
 	var/mob/living/carbon/human/victim = null
 
 /obj/item/roguecoin/gold/judgement/attack_self(mob/living/user)
