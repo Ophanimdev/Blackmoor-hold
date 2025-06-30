@@ -4,9 +4,9 @@
 	incantation = "ZIZO!! Let them whisper my TRUTHS!!"
 	ingredient_map = list(
 		"N" = /obj/item/candle,
-		"W" = /obj/item/cigbutt,
+		"NW" = /obj/item/cigbutt,
 		"C" = /obj/item/organ/tongue,
-		"E" = /obj/item/cigbutt,
+		"SE" = /obj/item/cigbutt,
 		"S" = /obj/item/candle,
 	)
 	consumption = TRUE
