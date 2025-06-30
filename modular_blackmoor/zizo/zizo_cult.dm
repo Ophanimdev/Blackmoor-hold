@@ -21,6 +21,8 @@
 		'sound/vo/cult/cultist5.ogg',
 	)
 	playsound(src.loc, pick(shouts), 100)
+	if(src.IsStun())
+		src.remove_status_effect(STATUS_EFFECT_STUN)
 	if(src.has_flaw(/datum/charflaw/addiction/godfearing)) //Why yes, Zizoids enjoy shouting their praises to the Overlord
 		src.sate_addiction()
 
