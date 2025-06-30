@@ -94,5 +94,5 @@
 		var/victim_name = input(user, "Who will suffer the death penalty?", "JUDGEMENT") as text|null
 		for(var/mob/living/P in GLOB.player_list)
 			if(P.real_name == victim_name)
-				victim = P
+				victim = P.create_weakref()
 				return

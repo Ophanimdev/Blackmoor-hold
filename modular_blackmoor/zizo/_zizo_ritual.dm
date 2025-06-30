@@ -86,7 +86,7 @@
 	playsound(cultist, pick(completion_sounds), 100, ignore_walls = FALSE)
 	cultist.say(incantation, forced = "ritual")
 	if (consumption)
-		var/list/center_loc = list("C" = T)
+		var/list/center_loc = list("C" = T.create_weakref())
 		for (var/dir in found_ingredients)
 			var/atom/movable/A = found_ingredients[dir]
 			if(!istype(A, /mob/living) && !(istype(A, /obj/item/candle)))//If the rite targets a human directly on the sigil it shouldn't consume them. 
