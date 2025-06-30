@@ -8,6 +8,8 @@
 /mob/living/carbon/human/proc/praise_zizo()
 	set name = "Call to Overlord!"
 	set category = "ZIZO"
+	if(!src.can_speak_vocal()) //If you can't speak, you can't shout
+		return
 	audible_message(span_danger("[src] praises <span class='bold'>Zizo</span>!"))
 	src.add_stress(/datum/stressevent/overlord_heard)
 	src.apply_status_effect(/datum/status_effect/overlord)
