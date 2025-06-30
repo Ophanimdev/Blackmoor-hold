@@ -19,17 +19,16 @@
 	. = ..()
 	var/mob/living/carbon/human/victim = ingredients["C"]
 
-	if(HAS_TRAIT(north_brother, TRAIT_CABAL) && HAS_TRAIT(south_brother, TRAIT_CABAL))
-		victim.set_species(/datum/species/abomination)
-		//You're beefy, but not the smartest.
-		victim.STASTR = 20
-		victim.STACON = 20
-		victim.STAINT = 3
-		victim.STAPER = 5
-		victim.regenerate_icons()
-		victim.name = "?!WHATISIT!?"
-		victim.spawn_gibs()
-		victim.spawn_gibs()
-		victim.spawn_gibs()
-		return
+	victim.set_species(/datum/species/abomination)
+	//You're beefy, but not the smartest.
+	victim.STASTR = 20
+	victim.STACON = 20
+	victim.STAINT = 3
+	victim.STAPER = 5
+	victim.regenerate_icons()
+	victim.name = "?!WHATISIT!?"
+	victim.spawn_gibs()
+	victim.spawn_gibs()
+	victim.spawn_gibs()
+	return
 

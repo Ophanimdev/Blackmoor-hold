@@ -19,7 +19,7 @@
 /datum/status_effect/naro_strength //There are benefits to crying out to Zizo!
 	id = "naro_strength"
 	alert_type = /atom/movable/screen/alert/status_effect/naro_strength
-	status_type = STATUS_EFFECT_UNIQUE
+	status_type = STATUS_EFFECT_REFRESH
 	effectedstats = list("strength" = 5)
 	duration = 30 MINUTES
 
